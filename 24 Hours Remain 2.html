@@ -1,0 +1,414 @@
+<tw-storydata name="24 Hours Remain 2" startnode="43" creator="Twine" creator-version="2.2.1" ifid="733A52C1-6155-4CB0-AFC1-FB239CCC4CFD" zoom="1" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.hallway{
+  background-color: grey;
+}
+
+.hallway a{
+ color: darkblue; 
+}
+
+.entry{
+  background-color: #FFD681;
+  color: black;
+}
+
+.nav{
+  background-color: #3784BF;
+  color: black;
+}
+
+.nav a {
+  color: #005136;
+}
+
+.ws{
+  background-color: #48504D;
+}
+
+.ws a{
+  color: red;
+}
+
+.eng{
+  background-color: #E0DD00;
+  color: black;
+}
+
+.bath{
+  background-color: #CCCBB7;
+  color: grey;
+}
+
+.bridge{
+ background-color: lightgreen;
+  color: darkgreen;
+}
+
+.galley{
+  background-color: #F48C00;
+  color: darkblue;
+}
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Beginning" tags="" position="714,144" size="100,100">You slowly wake to the sound of a staticky voice somewhere near your head.
+&lt;&lt;set $timeLeft to 24&gt;&gt;
+//&quot;...mander, please respond!&quot;//
+
+&lt;&lt;linkappend &quot;What?&quot;&gt;&gt;
+
+//&quot;Thank goodness, Commander! We thought something had happened to you!&quot;//
+
+As you gain more awareness, you realized the voice is coming from a walkie-talkie floating near your head.
+
+&lt;&lt;linkappend &quot;What&#39;s going on? I don&#39;t remember anything.&quot;&gt;&gt;
+
+//&quot;This isn&#39;t good. Did you hit your head on something?//
+
+As your eyes adjust to the darkness, you find yourself strapped into a chair in what appears to be a small metal capsule, lined floor to ceiling with &lt;&lt;link &quot;various colored buttons&quot; &quot;QuickEnd&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;. The only other object of note is the floating walkie-talkie.
+
+&lt;&lt;linkappend &quot;I don&#39;t know, //I don&#39;t remember anything.//&quot;&gt;&gt;
+
+//&quot;We don&#39;t have much time to explain, so I&#39;ll go over the basics. You are Commander June Capote of NASA. You&#39;re currently in space, and you have 24 hours to save the world.//
+
+&lt;&lt;linkappend &quot;24 hours? That doesn&#39;t sound like a lot of time!&quot;&gt;&gt;
+
+//&quot;Fine then. If you&#39;re going to be snippy about it you&#39;ll only have 12!&quot;// &lt;&lt;set $timeLeft to 12&gt;&gt;&lt;&lt;/linkappend&gt;&gt;
+&lt;&lt;link &quot;Save the world from what?&quot; &quot;Explanation&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;
+&lt;&lt;silently&gt;&gt;
+&lt;&lt;set $map to false&gt;&gt;
+&lt;&lt;set $cup to { isCarried: false, isFull: false}&gt;&gt;
+&lt;&lt;set $gum to false&gt;&gt;
+&lt;&lt;set $stw to false&gt;&gt;
+&lt;&lt;set $wires to false&gt;&gt;
+&lt;&lt;set $hamster to false&gt;&gt;
+&lt;&lt;set $checkedMachine to false&gt;&gt;
+&lt;&lt;set $placedHamster to false&gt;&gt;
+&lt;&lt;set $placedWires to false&gt;&gt;
+&lt;&lt;set $waterLevel to 0&gt;&gt;
+&lt;&lt;set $dummy to false&gt;&gt;
+&lt;&lt;set $newHere to true&gt;&gt;
+&lt;&lt;set $quarter to false&gt;&gt;
+&lt;&lt;set $hamsterFeed to false&gt;&gt;
+&lt;&lt;set $spent to false&gt;&gt;
+&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="QuickEnd" tags="" position="580,248" size="100,100">You smash your hand against random buttons as you see fit. This act of spontaneity on your part causes the retrorockets on your capsule to fire wildly, changing your docking procedure into a head-on collision with the space station. 
+
+The world is not impressed with your ability to choose your own destiny, and ends $timeLeft hours later.
+
+&#39;&#39;THE END&#39;&#39;</tw-passagedata><tw-passagedata pid="3" name="Explanation" tags="" position="734,281" size="100,100">//&quot;In $timeLeft hours, an asteroid roughly the size of texas is going to hit the earth, causing untold damage to the planet, as well as everyone and everything living on it. Our orbital defense systems should be able to take care of it, but one of the satelites needs manual repairs. That&#39;s where you come in.&quot;//
+
+&lt;&lt;linkappend &quot;This sounds like a pretty tall order.&quot;&gt;&gt;
+
+//I know this must be very stressful right now, but there&#39;s no need to worry. Everything you could possibly need to make repairs is located on the station, and we&#39;ll talk you through any work 
+t
+h
+a
+|//
+
+As the man on the other end of the radio reassures you, your capsule docks with what you can only assume to be the space station you&#39;ll be spending the next $timeLeft hours on. With a jarring jolt, the capsule attaches itself to the side of the station and the larger vehicle&#39;s artificial gravity activates, send your communicator hurtling towards the &lt;&lt;linkappend &quot;hard metal floor.&quot;&gt;&gt;
+Upon impact with the floor, your only line of communication shatters into hundreds of tiny pieces. The fate of the earth is now entirely in your hands.
+
+&lt;&lt;link &quot;Leave the capsule&quot; &quot;Entry Hall&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/linkappend&gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="4" name="Entry Hall" tags="entry" position="727,434" size="100,100">You have $timeLeft hours left.
+
+&lt;&lt;if $timeLeft is 0&gt;&gt;&lt;&lt;link &quot;Your time is up&quot; &quot;Save The World&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt; &lt;&lt;if $newHere&gt;&gt;&lt;&lt;set $newHere to false&gt;&gt;You leave the darkness of your personal capsule, blinking in the light. &lt;&lt;/if&gt;&gt;You enter what appears to be a sort of entrance hall. It would be rather cramped for more than a few people at a time, but you can see &lt;span id=&quot;entr&quot;&gt;&lt;&lt;link &quot;a map of the station&quot;&gt;&gt;&lt;&lt;replace &quot;#entr&quot;&gt;&gt;a map of the station, as well as a [[water cooler]].
+
+You study the map closer. The rooms in the space station //LeChuck// are organized into a ring shape. Each room is on the outside of the ring, with a circular hallway connecting them all together. This means that if you exited this room and took a left, you&#39;d move clockwise around the station. 
+
+[img[https://i.imgur.com/ptSdFxJ.png]]
+
+You decide to take the map with you, just in case. &lt;&lt;/replace&gt;&gt;&lt;&lt;set $map to true&gt;&gt;
+
+&lt;&lt;/link&gt;&gt;, as well as a [[water cooler]].&lt;/span&gt;
+
+
+&lt;&lt;link &quot;Exit to the right&quot; &quot;Galley Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Exit to the left&quot; &quot;Nav Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]] </tw-passagedata><tw-passagedata pid="5" name="Save The World" tags="" position="735,805" size="100,100">You have 0 hours left.
+
+You watch as the meteor begins its descent upon the earth. Its impact will destroy human life as you know it, and likely leave you stranded on this space station for the rest of your life. What will you do?
+
+[[Save the world]]
+[[Give up and create a new society on the space station]]</tw-passagedata><tw-passagedata pid="6" name="water cooler" tags="entry" position="538,432" size="100,100">You have $timeLeft hours remaining.
+
+&lt;&lt;if $cup.isCarried is false&gt;&gt;You push your hand against the water cooler&#39;s trigger. A trickle of cool water flows down your palm, and collects in a puddle on the floor.&lt;&lt;elseif $cup.isFull is false&gt;&gt;You use the water cooler for its intended purpose, filling your cup.&lt;&lt;set $cup.isFull to true&gt;&gt;&lt;&lt;else&gt;&gt;You try to fill your cup even further, but just succeed in making a mess.&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;link &quot;Head Back&quot; &quot;Entry Hall&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="7" name="Galley Hallway" tags="hallway" position="626,650" size="100,100">You have $timeLeft hours left.
+
+You stand in front of the galley doors.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Sleeping Quarters Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Entry Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|Galley]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Entry Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Sleeping Quarters Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="8" name="Nav Hallway" tags="hallway" position="874,643" size="100,100">You have $timeLeft hours left.
+
+You stand in front of the Navigation Room.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Entry Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;World Saving Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|Navigation Room]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;World Saving Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Entry Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="9" name="Galley" tags="galley" position="411,536" size="100,100">You have $timeLeft hours left
+
+You enter the Galley, a glorified cafeteria. The space station is not usually manned for any extended period of time, so the food is kept in nonperishable nutrient bars, and stored inside the row of [[vending machines]] you see lining the far wall. Scattered around the room are a few round [[tables]], designed for groups to eat together upon them.
+
+&lt;&lt;link &quot;Exit to the right&quot; &quot;Sleeping Quarters Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Exit to the left&quot; &quot;Entry Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="10" name="Entry Hallway" tags="hallway" position="748,607" size="100,100">You have $timeLeft hours left.
+
+You stand in front of the Entry Hall.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Galley Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Nav Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|Entry Hall]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Nav Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Galley Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="11" name="Sleeping Quarters Hallway" tags="hallway" position="496,783" size="100,100">You have $timeLeft hours left.
+
+&lt;&lt;if $timeLeft is 0&gt;&gt;[[[Time&#39;s up|Save The World]]]
+&lt;&lt;else&gt;&gt;You stand in front of the Sleeping Quarters.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Bridge Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Galley Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|Sleeping Quarters]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Galley Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Bridge Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Navigation Room" tags="nav" position="1086,497" size="100,100">You have $timeLeft hours left.
+
+You enter the Navigation room, which is actually a repurposed broom closet. Turns out space stations in synchronous orbit don&#39;t need to do that much navigation after all.
+
+&lt;&lt;if $hamster is false&gt;&gt;You see a small hamster standing at attention on the far side of the closet. Taped to the side of his enclosure is a nametag: Pilot G. Nibbles
+
+[[Speak with Pilot Nibbles]]&lt;&lt;else&gt;&gt;You don&#39;t see anything of interest in the room.&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;link &quot;Exit to the left&quot; &quot;World Saving Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Exit to the right&quot; &quot;Entry Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="13" name="World Saving Hallway" tags="hallway" position="975,789" size="100,100">You have $timeLeft hours left.
+
+You stand in front of the World Saving Room.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Nav Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Engineering Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|World Saving Room]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Engineering Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Nav Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="14" name="Sleeping Quarters" tags="hallway" position="267,778" size="100,100">&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;
+You have $timeLeft hours left
+
+You peer through a window in the door leading to the Sleeping Quarters. You decide that it would be rude to disturb them, but they look so peaceful while resting that you can&#39;t help but stare for a bit.
+
+&lt;&lt;if $quarter is false and $spent is false&gt;&gt;You slip in and grab the nearest quarter, being careful not to wake it.&lt;&lt;set $quarter to true&gt;&gt;&lt;&lt;/if&gt;&gt;
+
+[[Get back to work|Sleeping Quarters Hallway]]
+[[Inventory]]</tw-passagedata><tw-passagedata pid="15" name="Bridge Hallway" tags="hallway" position="572,911" size="100,100">You have $timeLeft hours left.
+
+You stand in front of the Bridge.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Bathroom Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Sleeping Quarters Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|Bridge]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Sleeping Quarters Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Bathroom Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="16" name="Bridge" tags="bridge" position="324,1055" size="100,100">&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;
+You have $timeLeft hours left
+
+You enter a small garden. The greenery a welcome change of pace from the metal you&#39;ve been surrounded by this entire time. As you stroll along the garden path, you come across a wooden bridge, crossing the gap between banks of a winding stream. You watch the water roll by beneath you.
+
+It&#39;s a very peaceful way to spend an hour, but eventually you leave the garden.
+&lt;&lt;if $timeLeft is 0&gt;&gt;&lt;&lt;link &quot;End of the line&quot; &quot;Save The World&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;you leave the garden.&quot; &quot;Bridge Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Bathroom Hallway" tags="hallway" position="699,1025" size="100,100">You have $timeLeft hours left.
+
+You stand in front of the Bathroom.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Engineering Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Bridge Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|Bathroom]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Bridge Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Engineering Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="18" name="Bathroom" tags="bath" position="743,1196" size="100,100">You have $timeLeft hours left.
+
+You enter a utilitarian space station bathroom. The small room is very clean, likely due to lack of use. One wall has a vaccuum powered [[toilet]] embedded into it, while on the one opposite has a [[mirror]] with a disenfectant dispenser next to it hangs.
+
+
+&lt;&lt;link &quot;Exit to the left&quot; &quot;Bridge Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Exit to the right&quot; &quot;Engineering Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="19" name="Engineering Hallway" tags="hallway" position="885,932" size="100,100">You have $timeLeft hours left.
+
+You stand in front of the Engineering Bay.
+
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;World Saving Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Continue on&quot; &quot;Bathroom Hallway&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Enter|Engineering Bay]]
+&lt;&lt;if $direction is &quot;ccw&quot;&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;Bathroom Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Turn around&quot; &quot;World Saving Hallway&quot;&gt;&gt;&lt;&lt;set: $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="20" name="Engineering Bay" tags="eng" position="1025,1072" size="100,100">You have $timeLeft hours left.
+
+You enter the abandoned engineering bay, a cluttered workshop filled floor to ceiling with electrical components and half-dismantled machinery. &lt;&lt;set $power to true&gt;&gt;You can either &lt;span id=&quot;machCheck&quot;&gt;&lt;&lt;link &quot;check the nearby terminal&quot;&gt;&gt;&lt;&lt;replace &quot;#machCheck&quot;&gt;&gt;check the nearby terminal for information, or start digging through &lt;&lt;link &quot;the machinery&quot; &quot;machinery check&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; for useful parts.
+
+You don&#39;t find any catalog system on the computer, but you do manage to temporarily power down the workbenches. That should make it much safer to collect the parts you need.&lt;&lt;/replace&gt;&gt;&lt;&lt;set $power to false&gt;&gt;&lt;&lt;/link&gt;&gt; for information, or start digging through &lt;&lt;link &quot;the machinery&quot; &quot;machinery check&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; for useful parts.&lt;/span&gt;
+
+
+&lt;&lt;link &quot;Exit to the left&quot; &quot;Bathroom Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Exit to the right&quot; &quot;World Saving Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="21" name="World Saving Room" tags="ws" position="1155,784" size="100,100">&lt;&lt;set $repaired to $placedWires and $placedHamster and ($waterLevel is 3)&gt;&gt;
+You have $timeLeft hours left
+
+&lt;&lt;if $checkedMachine is false&gt;&gt;Filling most of the World Saving Room is a massive, complex machine. All manner of reels, dials, and flashing screens adorn the World Saving Machine, but the most glaring feature is the large ON/OFF switch, currently set to OFF.
+
+&lt;&lt;linkappend &quot;Flip the switch&quot;&gt;&gt;
+
+You heroically put your astronaut training to good use, but the switch doesn&#39;t appear to do anything.&lt;&lt;/linkappend&gt;&gt;
+
+[[Check out the machine]]&lt;&lt;else&gt;&gt;You see the &lt;&lt;if $repaired is false&gt;&gt;broken &lt;&lt;/if&gt;&gt;World Saving Machine. &lt;&lt;if $placedWires is false&gt;&gt;[[You still need to replace the wiring. |Place wiring]]&lt;&lt;else&gt;&gt;Your impromptu repairs on the wiring are still holding up. &lt;&lt;/if&gt;&gt;&lt;&lt;if $placedHamster is false&gt;&gt;[[You need to find a new power supply. |Place hamster]]&lt;&lt;else&gt;&gt;Pilot Nibbles is running around in his wheel, supplying power to the World Saving Machine. &lt;&lt;/if&gt;&gt;&lt;&lt;if $waterLevel is 0&gt;&gt;[[The coolant tank is bone dry. |Place water]]&lt;&lt;elseif $waterLevel is 1&gt;&gt;[[There&#39;s some water in the coolant tank, but you&#39;ll need more. |Place water]]&lt;&lt;elseif $waterLevel is 2&gt;&gt;[[The coolant tank is almost full. |Place water]]&lt;&lt;else&gt;&gt;The coolant tank is full, and the machine can be safely turned on.&lt;&lt;/if&gt;&gt;
+
+[[Flip the switch|Power machine on]]&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;link &quot;Exit to the left&quot; &quot;Engineering Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;cw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Exit to the right&quot; &quot;Nav Hallway&quot;&gt;&gt;&lt;&lt;set $direction to &quot;ccw&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+[[Inventory]] </tw-passagedata><tw-passagedata pid="22" name="vending machines" tags="vend" position="230,469" size="100,100">The vending machine in front of you hums with the promise of the snacks and drinks held within. Dozens of packets dangle before you from those little curly hook things.
+&lt;&lt;set $timeTravel to false&gt;&gt;
+&lt;&lt;link &quot;Buy Zork Cola (15 Buckazoids)&quot; &quot;Try to buy anything&quot;&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;if $hamsterFeed is false and $hamster is false and $placedHamster is false&gt;&gt;&lt;&lt;link &quot;Buy Hamster Feed (25 cents)&quot; &quot;Buy feed&quot;&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;Buy Hamster Feed (SOLD OUT)&lt;&lt;/if&gt;&gt;
+&lt;&lt;link &quot;Buy Ifnkovhgroghprm (1984 Buckazoids)&quot; &quot;Try to buy anything&quot;&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Buy Orange Smoke BBQ Chips (18 Buckazoids)&quot; &quot;Try to buy anything&quot;&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Buy an IBN 5100 (32 Buckazoids)&quot; &quot;Try to buy anything&quot;&gt;&gt;&lt;&lt;set $timeTravel to true&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Buy AAA Batteries (1 Buckazoid)&quot; &quot;Try to buy anything&quot;&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;return [[&quot;Back&quot;|Galley]]&gt;&gt; 
+[[Inventory]]</tw-passagedata><tw-passagedata pid="23" name="tables" tags="galley" position="359,356" size="100,100">You have $timeLeft hours left
+&lt;&lt;if $gum is false&gt;&gt;
+You don&#39;t see much on the tables at first glance, but if you take some time to do &lt;&lt;linkappend &quot;a more thorough inspection...&quot;&gt;&gt;&lt;&lt;set $gum to true&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;
+
+You find some chewing gum stuck to the underside of the table. You take it, if only to stick it in a proper garbage bin somewhere.&lt;&lt;/linkappend&gt;&gt;
+&lt;&lt;else&gt;&gt;
+You look over the now slightly cleaner tables. There will be plenty of time later to clean them completely.
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;return [[&quot;Go back&quot;|Galley]]&gt;&gt;
+[[Inventory]]</tw-passagedata><tw-passagedata pid="24" name="Try to buy anything" tags="vend" position="236,627" size="100,100">You have $timeLeft hours left.
+
+&lt;&lt;if $timeLeft is 0&gt;&gt;You shake the vending machine, dislodging your snack. While reaching for your goodies, you suddenly realize [[[time&#39;s up.|Save The World]]]
+&lt;&lt;else&gt;&gt;Unfortunately, these vending machines only take buckazoids, and NASA&#39;s budget doesn&#39;t allow for pocket money.&lt;&lt;if $timeTravel is true&gt;&gt; Maybe next time you should jump to a timeline with more funding.&lt;&lt;set $timeTravel to false&gt;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;return [[&quot;Back&quot;|vending machines]]&gt;&gt; 
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="toilet" tags="bath" position="668,1346" size="100,100">You have $timeLeft hours left
+
+As you take a closer look at the glorified vaccuum cleaner, you notice [[something|Nice job, dummy]] lodged inside...
+
+[[Better leave it alone|Bathroom]]
+[[Inventory]]</tw-passagedata><tw-passagedata pid="26" name="mirror" tags="bath" position="818,1346" size="100,100">You have $timeLeft hours left.
+
+You walk up to the mirror. &lt;&lt;if $timeLeft &gt; 16&gt;&gt;You look pretty good, all things considered.&lt;&lt;elseif $timeLeft &gt; 8&gt;&gt;You&#39;re starting to look a little worried.&lt;&lt;else&gt;&gt;Is that really what people look like when they&#39;re facing down the end of the world?&lt;&lt;/if&gt;&gt;
+Along the bottom edge of the mirror is a counterlike surface for holding various toiletries. You see different brands of toothpaste and floss arranged along the surface&lt;&lt;if $cup.isCarried is false&gt;&gt;, as well as several toothbrushes held in a ceramic [[cup]].&lt;&lt;/if&gt;&gt;
+
+[[Go back to the bathroom|Bathroom]]
+[[Inventory]]</tw-passagedata><tw-passagedata pid="27" name="Nice job, dummy" tags="bath" position="668,1496" size="100,100">&lt;&lt;set $dummy to true&gt;&gt;You have $timeLeft hours left.
+
+You grab at the mysterious object, only to find that what appeared to be stuck in the toilet&#39;s inner working was actually a part of the toilet&#39;s inner workings, and grabbing it has caused your arm to stick inside it.
+
+This situation, on top of being quite embarassing, takes 2 hours to remedy.
+&lt;&lt;set $timeLeft to $timeLeft - 2&gt;&gt;
+&lt;&lt;if $timeLeft &lt; 1&gt;&gt;Unfortunately, while you freed yourself from your undignified prison, the earth was destroyed by an giant meteor. Remember that?
+
+THE END
+
+&lt;&lt;link &quot;Try Again?&quot; &quot;Beginning&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Let us never speak of this again|Bathroom]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="cup" tags="bath" position="818,1496" size="100,100">You shake the toothbrushes out of their vessel and take the cup for your own.
+&lt;&lt;set $cup.isCarried to true&gt;&gt;
+[[Dental hygiene can wait, we have a world to save|mirror]]
+[[Inventory]]</tw-passagedata><tw-passagedata pid="29" name="machinery check" tags="eng" position="1027,947" size="100,100">It took you an hour to rifle through all the bits and bobs in the engineering bay &lt;&lt;if $wires is false&gt;&gt;, but you&#39;ve found some useful looking wiring.
+&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;
+You have $timeLeft hours left.
+&lt;&lt;if $timeLeft lt 1&gt;&gt;&lt;&lt;link &quot;You&#39;re out of time&quot; &quot;Save the world&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Grab the wires and get outta here!&quot; &quot;Grab Wires&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Leave the wires for now, and hope you can find them later.&quot; &quot;Engineering Bay&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;else&gt;&gt;, but you found nothing of interest.&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;
+You have $timeLeft hours left
+&lt;&lt;if $timeLeft &lt; 1&gt;&gt;&lt;&lt;link &quot;You&#39;re out of time&quot; &quot;Save the world&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;[[Leave this junkheap behind you|Engineering Bay]]]
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Grab Wires" tags="eng" position="1161,952" size="100,100">&lt;&lt;if $power&gt;&gt;You gleefully grab at the wires only to have several thousand volts surge through your body! You were unconscious for quite some time after that, but your spasms did knock the wires loose.&lt;&lt;set $wires to true&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 3&gt;&gt;
+
+&lt;&lt;if $timeLeft &lt; 1&gt;&gt;Unfortunately, while you were taking a nap the Earth was destroyed. Sorry about that.&lt;&lt;else&gt;&gt;[[[You should leave before something worse happens|Engineering Bay]]]]&lt;&lt;/if&gt;&gt;&lt;&lt;else&gt;&gt;You take the wires without incident. Thank goodness you had the foresight to turn the power off!&lt;&lt;set $wires to true&gt;&gt;&lt;&lt;/if&gt;&gt;
+
+[[Leave with your prize in tow|Engineering Bay]]
+[[Inventory]]</tw-passagedata><tw-passagedata pid="31" name="Check out the machine" tags="ws" position="1291,945" size="100,100">&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;
+You have $timeLeft hours left. &lt;&lt;set $checkedMachine to true&gt;&gt;
+&lt;&lt;if $timeLeft lt 1&gt;&gt;[[[Time&#39;s up|Save The World]]]
+&lt;&lt;else&gt;&gt;
+
+You thoroughly inspect the device to find out what&#39;s wrong. You find that some of the wiring is missing, the Machine needs a new source of power, and the coolant tank needs to be refilled.
+
+[[World Saving Room&lt;-Go back]]
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Place wiring" tags="ws" position="1431,847" size="100,100">You have $timeLeft hours left.
+&lt;&lt;if $wires and $gum&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;set $placedWires to true&gt;&gt;
+&lt;&lt;if $timeLeft lt 1&gt;&gt;[[[Time&#39;s up|Save The World]]]&lt;&lt;else&gt;&gt;You replace the burnt out wiring with your spares, and keep them in place with the wad of chewed gum.
+
+[[World Saving Room&lt;-Go back]] 
+[[Inventory]]&lt;&lt;/if&gt;&gt;&lt;&lt;elseif $wires&gt;&gt;You try to fix the World Saving Machine&#39;s wiring, but you can&#39;t keep them in place for very long.&lt;&lt;else&gt;&gt;You look at the burnt out wiring in one of the many parts of the World Saving Machine. That will definitely need to be replaced before you can activate the device.
+
+[[World Saving Room&lt;-Go back]] 
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Place hamster" tags="ws" position="1250,619" size="100,100">&lt;&lt;if $hamster&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;set $placedHamster to true&gt;&gt;You have $timeLeft hours left.
+
+&lt;&lt;if $timeLeft lt 1&gt;&gt;[[[Time&#39;s up|Save The World]]]&lt;&lt;else&gt;&gt;You place Pilot Nibbles in the hamster wheel. He starts running immediately.
+
+[[World Saving Room&lt;-Go back]] 
+[[Inventory]]&lt;&lt;/if&gt;&gt;&lt;&lt;else&gt;&gt;You see a small wheel hooked up to the generator. You could spin it yourself, but the on switch is too far away. You can&#39;t be in both places at once.
+
+[[World Saving Room&lt;-Go back]] 
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Place water" tags="ws" position="1395,699" size="100,100">&lt;&lt;if $cup.isCarried and $cup.isFull and $waterLevel lt 3&gt;&gt;&lt;&lt;set $timeLeft to $timeLeft - 1&gt;&gt;&lt;&lt;set $waterLevel to $waterLevel + 1&gt;&gt;&lt;&lt;set $cup.isFull to false&gt;&gt;You have $timeLeft hours left.
+
+&lt;&lt;if $timeLeft lt 1&gt;&gt;[[[Time&#39;s up|Save The World]]]&lt;&lt;else&gt;&gt;You pour more water into the coolant tank.
+
+[[World Saving Room&lt;-Go back]] 
+[[Inventory]]&lt;&lt;/if&gt;&gt;&lt;&lt;else&gt;&gt;The World Saving Machine is pretty big, but it looks like the coolant tank just needs to be filled with water.&lt;&lt;if $waterLevel gt 0&gt;&gt; You&#39;re off to a strong start, but it&#39;s still not full yet.&lt;&lt;/if&gt;&gt;
+
+[[World Saving Room&lt;-Go back]] 
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Power machine on" tags="ws" position="1459,977" size="100,100">&lt;&lt;if $repaired&gt;&gt;The World Saving Machine roars to life, activating its tiger repellant protocols. You can now go anywhere on the space station //LeChuck//, confident that no tiger will attack you. By the time the meteor hits, the World Saving Machine&#39;s effects will have spread to the entire world, giving everyone on earth a small measure of comfort in this dire situation.&lt;&lt;set $stw to true&gt;&gt;
+
+[[Wait for the world to end|Save The World]]&lt;&lt;else&gt;&gt;You pull the switch again, but the machine still isn&#39;t quite ready for action.
+
+[[Go back|World Saving Room]]
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Speak with Pilot Nibbles" tags="nav" position="1214,330" size="100,100">Sadly, Pilot Nibbles doesn&#39;t know how to operate or repair the World Saving device next door, as the machinery aboard the space station //LeChuck// is completely out of his wheelhouse. He also doesn&#39;t know English, due to the fact that he is a hamster, the least talkative of rodents.
+
+&lt;&lt;if $hamsterFeed is false&gt;&gt;&lt;&lt;link &quot;Take Nibbles with you&quot; &quot;Take Nibbles&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Give Nibbles the hamster food&quot; &quot;Take Nibbles&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[Leave him at his post|Navigation Room]]
+[[Inventory]]</tw-passagedata><tw-passagedata pid="37" name="Take Nibbles" tags="nav" position="999,336" size="100,100">&lt;&lt;if $hamsterFeed is true&gt;&gt;&lt;&lt;set $hamster to true&gt;&gt;&lt;&lt;set $hamsterFeed to false&gt;&gt;While he&#39;s distracted by treats, you carefully remove Nibbles from his cage and place him in the darkness of your shirt pocket. He seems much more at ease there.&lt;&lt;else&gt;&gt;You try to corral Nibbles into your inventory, but he deftly avoids you. It looks like a bribe is in order.&lt;&lt;/if&gt;&gt;
+
+[[Go back|Navigation Room]]
+[[Inventory]]</tw-passagedata><tw-passagedata pid="38" name="Save the world" tags="" position="991,1323" size="100,100">With what? Your bare hands?
+
+[[YES]]</tw-passagedata><tw-passagedata pid="39" name="Give up and create a new society on the space station" tags="" position="1180,1315" size="100,100">With the destruction of earth, it falls to you and Pilot Nibbles to create a new society in space; one that will avoid the follies of its doomed terrestrial ancestors. In a close race, Pilot Nibbles is voted in as the first mayor of space. Mayor Nibbles is beloved by the people of //LeChuck//, and rules them fairly. Many years later, Mayor Nibbles dies while chewing on an electrical cable. The entire nation (i.e. you) enters a period of mourning. You spend the rest of your life in solitude, never truly getting over the loss of your one true spacefriend.
+
+THE END
+
+&lt;&lt;link &quot;Try Again?&quot; &quot;Beginning&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="YES" tags="" position="1457,1293" size="100,100">Congratulations! You have just stopped an earth-cracking meteor with your bare hands! (unbelievable, isn&#39;t it?)
+
+With a great sense of achievement, you get back into your capsule and head back to&lt;&lt;if $stw&gt;&gt; the newly de-tigered&lt;&lt;/if&gt;&gt; earth, head held high. The populace of earth will sing songs of this day&lt;&lt;if $dummy&gt;&gt;, though you might want to leave out the part where you got your hand stuck in a toilet for several hours&lt;&lt;/if&gt;&gt;.
+
+THE END
+[[Play Again?|Beginning]]</tw-passagedata><tw-passagedata pid="41" name="Inventory" tags="" position="1129,69" size="100,100">&lt;&lt;set $empty to true&gt;&gt;You are currently carrying:&lt;&lt;if $cup.isCarried&gt;&gt;
+&lt;&lt;set $empty to false&gt;&gt;A small porcelain cup&lt;&lt;if $cup.isFull&gt;&gt;, brimming with water&lt;&lt;/if&gt;&gt;.&lt;&lt;/if&gt;&gt;&lt;&lt;if $gum is true and $placedWires is false&gt;&gt;
+&lt;&lt;set $empty to false&gt;&gt;A wad of chewed gum.
+Gross.&lt;&lt;/if&gt;&gt;&lt;&lt;if $wires is true and $placedWires is false&gt;&gt;
+Some spare wires.&lt;&lt;set $empty to false&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hamster is true and $placedHamster is false&gt;&gt;
+The stalwart hamster pilot, G. Nibbles. &lt;&lt;set $empty to false&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $map is true&gt;&gt;&lt;&lt;set $empty to false&gt;&gt;&lt;&lt;linkappend &quot;A map of the station&quot;&gt;&gt;[img[https://i.imgur.com/ptSdFxJ.png]]&lt;&lt;/linkappend&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $hamsterFeed is true&gt;&gt;
+A bag of seeds, peas and corn. Everything a hamster needs to grow big and strong. Big for a hamster, anyway.&lt;&lt;set $empty to false&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $quarter is true&gt;&gt;
+A sleeping quarter. Be careful not to wake it!&lt;&lt;set $empty to false&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $empty is true&gt;&gt;
+Nothing!&lt;&lt;/if&gt;&gt;
+&lt;&lt;return &quot;Back&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Buy feed" tags="" position="76,536" size="100,100">You have $timeLeft hours left.
+
+&lt;&lt;if $timeLeft is 0&gt;&gt;You shake the vending machine, dislodging your snack. While reaching for your goodies, you suddenly realize [[[time&#39;s up.|Save The World]]]&lt;&lt;else&gt;&gt;&lt;&lt;if $quarter is true and $spent is false&gt;&gt;You carefully slip the sleeping quarter into the coin slot and buy a pack of hamster feed. It doesn&#39;t look that appetizing, but you&#39;re not entirely sure when you ate last. &lt;&lt;set $hamsterFeed to true&gt;&gt;&lt;&lt;set $spent to true&gt;&gt;&lt;&lt;set $quarter to false&gt;&gt;&lt;&lt;elseif $quarter is false&gt;&gt;You stare longingly at the hamster feed. It&#39;s the only food you&#39;ve seen in hours. Technically it&#39;s the only food you ever remember seeing.&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;return [[&quot;Back&quot;|vending machines]]&gt;&gt; 
+[[Inventory]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Titlepage" tags="" position="619,3" size="100,100">&lt;h1&gt;24 hours remain&lt;/h1&gt;
+A game by Robert Salay
+
+&lt;&lt;link &quot;Play&quot; &quot;Beginning&quot;&gt;&gt; &lt;&lt;/link&gt;&gt;</tw-passagedata></tw-storydata>
